@@ -25,5 +25,11 @@
         android:layout_height="wrap_content"
         android:text="Show Next Image" />
 
+    <Button
+        android:id="@+id/defaultButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Default Image" />
+
 
 </LinearLayout>

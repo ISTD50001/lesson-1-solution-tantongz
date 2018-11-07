@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     Button charaButton;
     ImageView charaImage;
     int count = 0;
+    Button defaultButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //TODO 1.9 [On your own] Create another Button to always display the first image
+        defaultButton = findViewById(R.id.defaultButton);
+        defaultButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                charaImage.setImageResource(images.get(0));
+            }
+        });
 
     }
 }
